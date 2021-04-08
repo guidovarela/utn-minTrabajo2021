@@ -6,13 +6,106 @@ Doctype indica la version de HTML utilizada
 <html>
     <head>
         <meta charset="utf-8">
-        <title>
-            UTN - Nuevo HTML
-        </title>
+        <title>UTN - Nuevo HTML</title>
     </head>
+
     <body>
+
+        <h1>
+            Headline 1 (título mas importante del documento)
+        </h1>
+        <h2>Titulo 2</h2>
+        <h3>Titulo 3</h3>
+        <h4>Titulo 4</h4>
+        <h5>Titulo 5</h5>
+        <h6>Titulo 6</h6> 
+<hr>
         <p>
             Hola Mundo en pandemia y ahora limitado!
         </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem exercitationem error ullam facere consequuntur, ducimus cupiditate cum dignissimos ipsa. Tempore at, quisquam voluptas aspernatur dolorum similique quidem libero nulla?. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure commodi rem est iste voluptates aliquid velit provident quam in at a magnam eveniet magni amet dolorum, libero non, cum ipsa!
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ab sunt explicabo harum odit? Voluptatum molestiae autem, ad dolorum architecto provident adipisci, quia a beatae quasi perspiciatis eos voluptatibus vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cumque qui dolorem culpa ullam distinctio rerum explicabo, adipisci aut sed expedita temporibus, consectetur rem vitae consequuntur blanditiis, unde labore ad?. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Saepe illo culpa omnis quas expedita ut corrupti deserunt, voluptas repudiandae esse ducimus asperiores! Eum esse sed earum, nesciunt similique quisquam perferendis.
+        </p>
+        <span>
+            texto sin formato
+        </span>
+        <span>
+            otro texto sin formato
+        </span>
+
+        <!-- Hay etiquetas que no tienen contenido (etiquetas vacías)
+        br, hr, img, meta, link
+        -->
+        <hr>
+
+        <h2>Listas</h2>
+        <h3>lista ordenada</h3>
+            <ol type="a" start="1">
+                <li>item
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+
+        <h3>lista no-ordenada</h3>
+            <ul>
+                <li>item 1
+                    <ul>
+                        <li>sub-item 1.1</li>
+                        <li>sub-item 1.2
+                            <ul>
+                                <li>sub sub item 1.1.1</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>item</li>
+                <li>item
+                    <ul>
+                        <li>sub-item</li>
+                        <li>sub-item</li>
+                    </ul>
+                </li>
+                <li>item</li>
+            </ul>
+
+            <hr>
+
+            <h2>Imágenes</h2>
+            <!-- formatos de imagen: JPG / PNG / GIF / SVG / WEBP  -->
+            <!-- 
+                JPG -> alta calidad, compresion
+                PNG -> alta calidad, transparencias, sin compresion
+                GIF -> baja calidad, animacion por cuadros
+            -->
+            <h3>Imagen (ambito local)</h3>
+            <img src="img/googlelogo.png" alt="Logo Google 2021">
+
+            <h3>Imagen (remota)</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maradona-Mundial_86_con_la_copa.JPG/245px-Maradona-Mundial_86_con_la_copa.JPG" alt="Maradona 1986">
+
+
+            <hr>
+            <h2>Hipervínculos</h2>
+            <a href="http://www.google.com">ir a Google</a>
+            <a href="pruebas.html">Archivo pruebas</a>
+            <a href="mailto:mail@mail.com">Email</a>
+            <a href="tel:6546879879">Llamar por tel</a>
+            <a href="http://wa.me/6546546544?text=Quiero mas informacion sobre Maradona">Whatsapp</a>
+            
+
+
+
     </body>
 </html>
