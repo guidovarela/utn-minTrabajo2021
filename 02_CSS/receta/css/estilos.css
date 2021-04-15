@@ -17,7 +17,7 @@
         /*Los selectores de etiqueta se aplican en cada uso de la misma*/
         p{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color:rgb(73, 15, 5);
+            /* color:rgb(73, 15, 5); */
         }
 
         /* div{
@@ -38,9 +38,15 @@
             font-weight: bold;
             font-style: italic;
         }
-
+        /*Modelo de Caja
+        width -> ancho
+        height -> alto
+        margin -> margen, el espaciado exterior
+        padding -> espaciado interior (contando desde el borde)
+        border -> linea de borde
+        */
         .header{
-
+           
         }
         .receta{
             border:2px solid white;
@@ -49,11 +55,32 @@
             color:tomato;
         }
         .ingredientes{
-
+            background:lightblue;
+            padding:15px;
+            margin-top:15px;
+            color:rgba(25, 68, 211, 0.808);
+            border-radius:10px;
         }
         .elaboracion{
-
+            background-color: darkgoldenrod;
+            padding: 20px;
+            color:darkred;
+            margin-top:20px;
         }
         .pie{
+            background: darkslateblue;
+            color:rgba(158, 19, 223, 0.616);
+            padding: 20px;
+            text-align: right;
+        }
+        .linkpie{
+            color:white;
+        }
 
+        /* Selector de ID */
+        #general{
+             /*alinear una caja*/
+             width:70%;
+             margin-left:15%;
+             margin-right:15%;
         }
