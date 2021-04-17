@@ -1,0 +1,3 @@
+Para la proxima:
+En un documento HTML, generar la estructura de etiquetas de una receta de cocina, o un CV (o cualquier otra pagina que quieran). 
+Cualquier consulta, por Slack.
