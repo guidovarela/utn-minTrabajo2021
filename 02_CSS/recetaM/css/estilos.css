@@ -1,0 +1,58 @@
+/*Selector universal*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Selectores de etiqueta */
+body{
+    background-color: tomato;
+    color: white;
+}
+h1{
+    text-align: center;
+    color:cornflowerblue;
+    margin:10px;
+}
+p{
+    border:2px solid white;
+}
+
+
+/* Selector de Clase */
+.destacado{
+    font-size:20px;
+    border:none;
+}
+.imagenHeader{
+    width:100%;
+    border-radius:20px;
+}
+
+.cajatitulo{
+    background: rgba(255, 255, 255, 0.596);
+    padding:10px;
+}
+.ingredientes{
+    background: rgb(165, 16, 165);
+    background: brown;
+    padding:10px;
+}
+.elaboracion{
+    background:chocolate;
+}
+
+/*
+Propiedades:
+margin -> espacio exterior al elemento
+padding -> espacio interno, o relleno
+border -> border
+
+*/
+
+/*Selector de ID*/
+#general{
+    width:90%;
+    margin-left:5%;
+    margin-right: 5%;
+}
