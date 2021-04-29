@@ -10,7 +10,7 @@ body{
 .caja1,.caja2,.caja3{
 	border: 1px solid grey;
 	background: lightblue;
-	width: 40%;
+	width: 32%;
 }
 
 .caja1{float: left;}

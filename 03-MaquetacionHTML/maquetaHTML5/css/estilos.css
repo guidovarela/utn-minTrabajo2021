@@ -1,0 +1,71 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body,h1{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Home - Portada */
+
+#contenedor{
+    width:85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .header{
+        background:royalblue;
+        text-align: left;
+        color: white;
+        padding: 16px;
+        /* height: 60px; */
+        margin-bottom: 10px;
+        }
+        .logo{
+            text-transform: uppercase;
+        }
+    .navbar{
+        background:rgb(8, 8, 82);
+        text-align: right;
+        text-transform: uppercase;
+        padding: 10px;
+        
+    }
+    a{
+        color:white;
+    }
+
+    /* Seccion Noticias */
+    /* Modelo de caja -> width + padding + border
+    Apunta a manejar los contenendores (cualquier caja - div, article, header, section, etc)
+    width + padding + border = Ancho real
+    70% + 30px + 6px 
+
+    CSS3 -> box-sizing: border-box / content-box
+    */
+
+    .principal{
+        background: rgb(93, 93, 93);
+        padding: 15px;
+        /* border:10px solid red; */
+        width:68%; /* width es ancho del contenido*/
+        float:left; /*flota a izq*/
+     }
+    .sidebar{ /*<aside>*/
+        width: 30%;
+        background: rgb(195, 195, 195);
+        height: 300px;
+        float:right; /*flota a der*/
+    }
+    .footer{
+        clear:both; /*para cortar con la incidencia de los float, debemos limpiar con clear*/
+        background: rgb(44, 179, 224);
+        text-align: center;
+        color:white;
+        padding: 15px;
+    }
