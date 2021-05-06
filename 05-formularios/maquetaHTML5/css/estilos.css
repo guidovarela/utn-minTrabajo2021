@@ -140,10 +140,46 @@ body,h1{
      .noticia figure img{
         width:100%
      }
+
+     .banner{
+         margin-top: 30px;
+     }
      .banner img{
         width:100%
      }
 
+     /* Fomulario Contacto */
+     #formContacto{
+         width: 60%;
+         margin: 0 auto;
+         padding:20px;
+         background: rgba(255, 255, 255, 0.383);
+         border-radius: 10px;
+         color: blue;
+     }
+     #formContacto input{
+         width:100%;
+         padding: 10px;
+        }
+    #formContacto div{
+         margin-bottom: 20px;
+     }
+     #formContacto select{
+         width: 100%;padding: 10px;
+     }
+     #formContacto textarea{
+         width: 100%;
+         padding: 10px;
+         font-family: inherit;
+     }
+
+     .iconos{
+         width:10%;
+     }
+     /* Selector eliqueta[atributo="valor"] */
+     #formContacto input[type="radio"],#formContacto input[type="checkbox"]{
+         width:10%;
+     }
 
 
 

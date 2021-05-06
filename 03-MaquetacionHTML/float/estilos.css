@@ -20,7 +20,7 @@ body{
 /*si usamos float, en algun lugar hay que limpiar con clear*/
 
 .pie{
-	clear:both;
-	height: 150px;
+	/* clear:both; */
+	
 	background: orange;
 }
