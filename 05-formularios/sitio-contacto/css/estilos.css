@@ -77,6 +77,51 @@ body{
             width:100%;
         }
 
+     /*Form Contacto  */
+
+     #formContacto{
+         background: rgba(255, 255, 255, 0.534);
+         padding:15px;
+         width:60%;
+         margin-left: auto;
+         margin-right: auto;
+         border-radius: 20px;
+        }
+        #formContacto input{
+            width:100%;
+            border:none;
+            border-radius: 3px;;
+            padding:10px;
+            box-sizing: border-box;
+        }
+        /* selector de etiqueta+atributo */
+        #formContacto input[type="checkbox"]{
+            width:5%;
+        }
+        #formContacto input[name="genero"]{
+            width:5%;
+        }
+        #formContacto select{
+            width:100%;
+            border:none;
+            border-radius: 3px;;
+            padding:10px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        #formContacto textarea{
+            width:100%;
+            border:none;
+            border-radius: 3px;
+            padding:10px;
+            box-sizing: border-box;
+            font-family: inherit; /*heredado de su contenedor*/
+        }
+        #formContacto div{
+            margin-bottom: 20px;
+        }
+
+        
         
 
 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto :: Sitio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <main id="contenedor">
+
+        <header class="header">
+            <div class="logo">
+                <h1>utn</h1>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="">Productos</a>
+                <a href="">Noticias</a>
+                <a href="contacto.html">Contacto</a>
+            </span>
+        </nav>
+
+        <section class="principal">
+
+            <h2>Contactanos</h2>
+            <p>Envianos un mensaje, que te lo contestamos al toque</p>
+
+            <form action="mailto:guido@mail.com?Subject=Nuevo correo" method="POST" id="formContacto">
+
+                <!-- nombre, email, localidad, genero, suscripcion, mensaje, btn-envio -->
+
+                <div>
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" autofocus required>
+                </div>
+
+                <div>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required>
+                    </label>
+                </div>
+
+                <div>
+                    <span>Localidad</span>
+                   <select name="localidad">
+                       <option value="">Seleccione...</option>
+                        <option value="01">Avellaneda</option>
+                        <option value="02">Castelar</option>
+                        <option value="03">Lomas de Zamora</option>
+                        <option value="04">La Plata</option>
+                        <option value="05">Hurlingham</option>
+                        <option value="06">Vicente Lopez</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span>Género</span>
+                    <br>
+                    <!-- boton de opcion -->
+                    <label>
+                        <input type="radio" name="genero" value="Femenino"> <span> Femenino </span>
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="genero" value="Masculino">
+                        <span>Masculino</span>
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="genero" value="Otro">
+                        <span>Otro</span>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <span>Mensaje</span>
+                        <textarea name="mensaje" required placeholder="Escriba un mensaje"></textarea>
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        <span>Deseo suscribirme al boletin digital del sitio y recibir mucho SPAM</span>
+                    </label>
+                </div>
+
+                <!-- envio -->
+                <input type="submit" value="Enviar">
+
+
+
+            </form>
+
+            <!--<hr>
+
+             <form action="">
+                <input type="color" name="" id="">
+                <br>
+                <input type="date" name="" id="">
+                <br>
+                <input type="range" name="" min="1" max="10" step="1">
+                <br>
+                <input type="number" name="" required>
+                <input type="submit" value="probar">
+            </form> -->
+
+        </section>
+
+        <aside class="sidebar">
+            
+            <form action="">
+                Usuario <input type="text" name="user">
+                <br>
+                Password <input type="password" name="pass" minlength="6" maxlength="12" placeholder="entre 6 y 12 caracteres" required>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+
+        </aside>
+        <!-- justo cuando cierra el float, insertamos un div con el clear -->
+        <div class="limpiarFloat"></div>
+
+        <footer class="footer">
+            <p>
+                &copy; 2021 - Derechos reservados
+                <br>
+                Desarrollado por <a href="">Yo</a>
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

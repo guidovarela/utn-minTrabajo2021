@@ -1,0 +1,42 @@
+
+Formulario
+Elemento de interaccion con el usuario
+-> Contacto
+-> Mensajes
+-> Suscripcion
+-> Busqueda
+-> login
+-> Registro
+
+<form action="" method="">
+    -> action: a donde se envia la info recolectada de los campos (mailto:mail)
+    -> method: metodo de envio de los datos (verbos HTTP / get - POST - put - delete - update )
+
+    Campos -> input / select / textarea
+
+    1) <input type="" name="">
+        -> type: tipo de campo / text, email, number, date, password, checkbox, radio, submit, color, range, month, tel, etc etc
+        -> name: nombre del campo -> variable que guarda el valor ingresado. Si el campo no tiene "name", no forma parte del envio. name=value
+
+        -> maxlenght / minlenght : cantidad maxima o minima de caracteres 
+
+    2) <select name="">
+        -> combo o deplegable
+            <option value=""> Valor </option>
+        </select>
+
+    3) <textarea name="">
+        -> Area de texto multilinea, tiene scroll
+
+        </textarea>
+
+        <label></label> -> ayuda visual, accesibilidad -> vincula el texto del titulo con el campo
+
+    HTML5
+
+    - required -> validacion de datos
+    - placeholder="" -> permite agregar informacion al campo, se borra al ingresar el value
+    - autofocus -> foco automatico, se aplica 1 vez en el form
+    - pattern="" -> reforzar la validacion de un campo -> expresion regular
+
+</form>
