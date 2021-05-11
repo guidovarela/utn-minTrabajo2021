@@ -1,0 +1,103 @@
+*{
+    /* box-sizing: border-box; margin: 0;
+    padding: 0;*/
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+body{
+    /* background-color: tomato; */
+    margin: 0;
+    padding: 0;
+}
+
+/* Maqueta HTML5 */
+
+#contenedor{
+   width:80%;
+   margin-left: auto; 
+   margin-right: auto; 
+   /* tambien se puede utilizar outline */
+   /* border:2px solid black; */
+    }
+    .header{
+        color: white;
+        background:rgb(13, 89, 231);
+        padding:5px;
+        padding-left: 20px;
+        }
+        .logo{
+            text-transform: uppercase;
+        }
+    .navbar{
+        background: rgb(13, 13, 105);
+        text-align: right;
+        padding: 10px;
+    }
+    /* Selectores anidados */
+    .navbar a{
+        color: white;
+        text-decoration: none;
+    }
+    
+
+    /* Modelo de caja - Box Model 
+    una caja se dimensiona segun: el contenido, el relleno, el border y el margen
+    width + padding + border = Ancho real
+    ej. principal
+    80% + 30px + 4px
+    CSS3 -> box-sizing -> el ancho se puede concebir desde el contenido o desde el border
+    */
+
+    .principal{
+        background: rgb(71, 71, 71);
+        width:80%;
+        float:left;
+        padding:15px;
+        box-sizing: border-box;
+        }
+        .destacado{
+            background: white;
+            padding: 10px; 
+            margin-bottom: 15px;   
+        }
+        .simple{
+            background: white;
+            padding: 10px; 
+            width:50%;
+            float:left;
+            box-sizing: border-box;
+        }
+        .simple figure{
+            margin:0;
+        }
+        .simple figure img{
+            width:100%;
+        }
+
+        
+
+
+
+    .sidebar{
+        background: grey;
+        width:20%;
+        padding: 20px;
+        height: 300px;
+        float:right;
+        box-sizing: border-box;
+    }
+
+    /* float -> floten a izq o a der
+        clear -> "limpia" o cancela el float, para que no siga insidiendo en los elementos posteriores 
+    */
+    .limpiarFloat{
+        clear:both;
+    }
+    .footer{
+        background: rgb(65, 153, 225);
+        padding: 10px;
+        text-align: center;
+    }
