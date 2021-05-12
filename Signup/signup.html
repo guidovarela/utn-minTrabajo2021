@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Signup</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<form action="/enviar" method="POST">
+		<div class="container">
+		  <h1>Crear una cuenta</h1>
+
+		  <label for="email"><b>Ingresar e-mail*</b></label>
+		  <input type="email" placeholder="ejemplo@email.com" name="email" required>
+
+		  <label for="psw"><b>Escribir contraseña*</b></label>
+		  <input type="password" placeholder="Contraseña" name="psw" required>
+	  
+		  <label for="psw-repeat"><b>Repetir contraseña*</b></label>
+		  <input type="password" placeholder="Contraseña" name="psw-repeat" required>
+
+		  <label>
+			  <input type="checkbox" checked="checked" name="remember">Recordar
+			  </label>
+			
+		<p>*Campos obligatorios</p>
+		  <p>Al registrarme acepto los <a href="">Términos y condiciones</a>.</p>
+	  
+		  <div class="clearfix">
+			<button type="submit" class="signupbtn">Registrame</button>
+		  </div>
+		</div>
+	  </form> 
+</body>
+</html>

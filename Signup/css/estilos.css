@@ -1,0 +1,41 @@
+* {box-sizing: border-box; background-color: rgba(75, 192, 192, 0.096)}
+
+.container{width: 80%; margin-left: auto; margin-right: auto}
+
+/* Full-width input fields */
+  input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #0dafb4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {opacity:1}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {float: left; width: 100%}
+
+/* Add padding to container elements */
+.container {padding: 16px}
+
+/* Clear floats */
+.clearfix::after {content: ""; clear: both; display: table}
