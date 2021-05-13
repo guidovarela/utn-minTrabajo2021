@@ -1,15 +1,60 @@
-*{margin: 0;padding: 0;}
+*{margin: 0;padding: 0;box-sizing:border-box}
+body{
+	font-family: "Open Sans" ;
+}
 
+.header{
+	background:cornflowerblue;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	/* por default, el valor stretch estira todos los items a la altura del mas alto  */
+	align-items: baseline;
+	align-content: center;
+	justify-content: space-around;
+	}
+	.logo{width:30%;}
+	.search{width: 30%;}
+		.search input{
+			padding: 15px;
+			border:none;
+			border-radius: 5px;
+			width: 100%;
+		}
+	.navbar{width:20%;}
+		.menuSocial{
+			display: flex;
+			justify-content: space-around;
+			list-style-type: none;
+			/* menu horizontal */
+			flex-direction: row;
+			/* menu vertical 
+			flex-direction: column;*/
+			}
+
+
+/* Flex-container */
 .contenedor{
-	background-color: blue;
-}
-
-.item{
-	background-color: #ccc;
-	width: 30%;
-	margin-bottom: 10px;
-	text-align: center;
-	line-height: 75px;
-	font-size: 30px;
-}
+	width:90%;
+	height: 70vh;
+	margin:0 auto;
+	background-color: rgb(13, 71, 148);
+	display: flex;
+	/* El eje que organiza a los items -> Y*/
+	flex-direction:row;
+	flex-wrap: wrap;
+	/* Ordena los items en el eje principal */
+	justify-content: center;
+	/* Ordena  los items en el eje secundario */
+	/* align-items: center ; */
+	align-content:center;
+	}
+	/* flex-items */
+	.item{	
+		background-color: #ccc;
+		width: 48%;
+		/* margin-bottom: 10px; */
+		text-align: center;
+		font-size: 30px;
+	}
 
