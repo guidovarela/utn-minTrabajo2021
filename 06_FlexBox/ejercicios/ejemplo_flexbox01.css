@@ -1,0 +1,15 @@
+*{margin: 0;padding: 0;}
+
+.contenedor{
+	background-color: blue;
+}
+
+.item{
+	background-color: #ccc;
+	width: 30%;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+}
+
