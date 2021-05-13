@@ -14,7 +14,7 @@
 		}
 		.contenedor {
 			background: #fff;
-			width: 900px;
+			width: 90%;
 			margin: auto; 
 		}
 		header, footer {
@@ -22,18 +22,34 @@
 			padding: 20px;
 			text-align: center; 
 		}
-		main, aside {
-			margin: 10px;
-		}
-		main {
-			width: 380px; 
-		}
-		.lateral-1 { 
-			width: 230px; 
-		}
-		.lateral-2 { 
-			width: 230px;
-		}
+
+
+		/* flex-container */
+		.contenedor-flex{
+			display: flex;
+			flex-direction: row;
+			/* justify-content: space-between; */
+			
+			}
+			/* flex-items */
+			main {
+				width: 30%; background-color: rgb(224, 58, 58);
+				align-self: center;
+				order:0;
+				flex-grow:2;
+			}
+			.lateral-1 { 
+				width: 20%; background-color: rgb(73, 165, 64);
+				align-self: center;
+				order:-1;
+				flex-grow:3;
+				
+			}
+			.lateral-2 { 
+				width: 20%;background-color: rgb(223, 209, 20);
+				order:1;
+				flex-grow:0.5;
+			}
 		
 		
 	</style>
