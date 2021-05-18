@@ -14,7 +14,7 @@
 		}
 		.contenedor {
 			background: #fff;
-			width: 900px;
+			width: 90%;
 			margin: auto; 
 		}
 		header, footer {
@@ -23,26 +23,91 @@
 			text-align: center; 
 		}
 		main, aside {
-			margin: 10px;
+			
 		}
-		main {
-			width: 380px; 
-		}
-		.lateral-1 { 
-			width: 230px; 
-		}
-		.lateral-2 { 
-			width: 230px;
-		}
-		
+
+		.contenedor-flex{
+			display:flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: stretch;
+			}
+			main {
+				width: 30%;
+				background-color: chartreuse;
+				padding: 15px;
+				/* Orden de aparicion, independiente de la posicion de las etiquetas */
+				order:0;
+			}
+			.lateral-1 { 
+				width: 20%;
+				background-color: rgb(255, 179, 0);
+				padding: 15px;
+				/* Define una alineacion individual */
+				align-self: center;
+				order:-1;
+			}
+			.lateral-2 { 
+				width: 20%;
+				background-color: rgb(29, 58, 226);
+				padding: 15px;
+				align-self: center;
+				order:1;
+			}
+			
+			.header{
+				display:flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				}
+				.header .logo{
+					/* border:solid; */
+					/* order:-1; */
+					flex-grow:1;
+					text-align: left;
+					}
+				.header nav{
+					/* border:solid; */
+					/* prop. padre */
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					/* prop. hijo */
+					align-self: center;
+					flex-grow:0.3;
+					}
+					.header nav .item1{
+						order:2
+					}
+					.header nav a{
+						color:white;
+						padding: 5%;
+						border:1px solid white;
+						border-radius: 5px;
+						}
+						.header nav a:hover{
+							background: rgba(255, 255, 255, 0.623);
+							color:black;
+						}
+
 		
 	</style>
 	
  
 	<div class="contenedor">
-		<header> 
-			<h1>Tres columnas  3 1 2</h1>
+		<header class="header"> 
+			<div class="logo">
+				<h1>Flex</h1>
+			</div>
+			<nav>
+				<a href="" class="item1">Fb</a>
+				<a href="" class="item2">Tw</a>
+				<a href="" class="item3">Yt</a>
+			</nav>
 		</header>
+
 		<div class="contenedor-flex">
 			<main>
 				<h2>Principal</h2>
@@ -56,7 +121,7 @@
 			<aside class="lateral-2">
 				<h2>Lateral 2</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, doloremque, soluta ipsa odio aliquid minus quas quod esse repellendus nam vitae molestias. Quaerat, dignissimos ut at dolor omnis quasi magnam!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, tempore, inventore, obcaecati totam nesciunt officiis molestias saepe rem amet illo illum nostrum commodi modi voluptatibus perspiciatis minima ratione sed eos.</p>
+
 			</aside>
 		</div>	
 		<footer>
