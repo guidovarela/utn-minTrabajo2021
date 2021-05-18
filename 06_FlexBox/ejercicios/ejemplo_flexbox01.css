@@ -1,15 +1,75 @@
 *{margin: 0;padding: 0;}
+html{
+	font-family: "Open Sans",arial, sans-serif;
+}
 
+/* Flex-container */
 .contenedor{
-	background-color: blue;
-}
+	background-color: rgba(255, 102, 0, 0.815);
+	width:90%;
+	height: 80vh;
+	margin:0 auto;
+	display:flex;
+	/* define cuál es el eje principal -> default es X*/
+	flex-direction: row;
+	/* define una sola fila o varias (segun el ancho de los hijos) -> default: nowrap */
+	flex-wrap:wrap;
+	/* flex-flow: row wrap; */
+	/* Organizar los hijos segun el eje principal, siempre y cuando haya espacio disponible */
+	justify-content: space-around;
+	/* Organizar los hijos segun el eje secundario, siempre y cuando haya espacio disponible */
+	align-content: space-around;
+	}
 
-.item{
-	background-color: #ccc;
-	width: 30%;
-	margin-bottom: 10px;
-	text-align: center;
-	line-height: 75px;
-	font-size: 30px;
-}
+	/* Flex-items */
+	.item{
+		background-color: #ccc;
+		width: 48%;
+		/* margin-bottom: 10px; */
+		text-align: center;
+		/* line-height: 75px; */
+		font-size: 1.2em;
+	}
 
+	/* .item5{width: 60%;} */
+
+	.item8{
+		display:flex;
+		flex-direction:column-reverse;
+	}
+
+
+	.header{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		padding: 20px;
+		background: rgb(29, 85, 214);
+		margin-bottom: 20px;
+		}
+		.logo{
+			width: 30%;
+			text-align: center;
+		}
+
+		.search{
+			width:20%;
+			}
+			.search input{
+				width:100%;
+				padding: 10px;
+				border:none;
+				border-radius: 5px;
+			}
+
+		.navbar{
+			width:30%;
+			text-align: center;
+		}
+
+		.navbar a{
+			color:white; 
+			font-size: 2em;
+			margin-right: 20px;
+		}
