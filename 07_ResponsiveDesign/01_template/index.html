@@ -3,10 +3,12 @@
 	<head>
 		<title>Responsive Design</title>
 		<meta charset="utf-8" />
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	   
+		<!-- Meta Viewport para activar los media queries - Responsive Design -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		
-		<!--<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">-->
+		<!-- Normalizador de CSS / resetea las etiquetas  -->
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 
 		<link rel="stylesheet" type="text/css" href="css/estilos.css" />
 		
@@ -14,21 +16,54 @@
 	</head>
 	<body>
 
-		<section id="contenedor">
+		<div class="banner">
+			<a href="">
+				<img src="img/banner.jpg" alt="banner">
+			</a>
+		</div>
 
+
+		<section id="contenedor">
 			<article class="primero">
-				1
+				<div class="imagen">
+					<img src="img/img1.jpg" alt="">
+				</div>
+				<div class="contenido">
+					<h2>Titulos</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit a et, saepe quo beatae reiciendis fugit assumenda impedit repellendus. Debitis incidunt eos earum voluptate. Ratione ad labore at soluta incidunt!</p>
+				</div>
 			</article>
 
 			<article class="segundo">
-				2
+				<div class="imagen">
+					<img src="img/img2.png" alt="">
+				</div>
+				<div class="contenido">
+					<h2>Titulos 2</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit a et, saepe quo beatae reiciendis fugit assumenda impedit repellendus. Debitis incidunt eos earum voluptate. Ratione ad labore at soluta incidunt!</p>
+				</div>
 			</article>
 
 			<article class="tercero">
-				3
+				<div class="imagen">
+					<img src="img/img3.jpg" alt="">
+				</div>
+				<div class="contenido">
+					<h2>Titulos</h2>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit a et, saepe quo beatae reiciendis fugit assumenda impedit repellendus. Debitis incidunt eos earum voluptate. Ratione ad labore at soluta incidunt!</p>
+				</div>
 			</article>
 		</section>
 
+
+		
+
+
+		<footer class="footer">
+			<div class="copy">
+				<span>2020 - UTN</span>
+			</div>
+		</footer>
 
 	</body>
 </html>
