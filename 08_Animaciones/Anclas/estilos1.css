@@ -1,0 +1,213 @@
+*{margin:0;padding: 0; }
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	text-align: center;
+	padding: 1em;
+	width: 100%;
+	background: white;
+	position: fixed;
+	}
+	/*Selectores anidados*/
+	.navbar ul{
+		list-style-type: none;
+		}
+		.navbar ul li{
+			display:inline
+		}
+
+		/*Transiciones*/
+		/*la animacion es progreso / tiempo*/
+		
+		/* instancia inicial */
+		.navbar ul li a{
+			color: salmon;
+			text-decoration: none;
+			background: white;
+			padding: 0.9em;
+			transition-duration: 1.2s;
+			transition-property:background,color;
+			transition-delay:0s,2.5s;
+			transition-timing-function: linear ;
+		}
+		/* instancia final */
+		.navbar ul li a:hover{
+			background:salmon;
+			color: white;
+		}
+		.navbar ul li a:active{
+			box-shadow: 0 0 5px 5px black;
+		}
+		/* section:target{
+			background:green !important;
+		} */
+
+	
+
+	
+
+
+#seccion1,#seccion2,#seccion3,#seccion4,#seccion5{
+	height: 490px;
+	padding: 0.9em;
+	padding-top: 60px;/*igual a la altura de nav*/
+	color: white;
+}
+
+#seccion1{
+	background: #654eae;
+	transition-duration: 0.5s;
+	}
+	#seccion1:hover{
+		background: #4e60aea9;
+	}
+#seccion2{
+	background: #cce666;
+}
+#seccion3{
+	background: salmon;
+}
+#seccion4{
+	background-color: rgb(195, 18, 18);
+}
+#seccion5{
+	background-color: rgb(28, 28, 149);
+}
+
+.volver{
+	position: fixed;
+	bottom:2%;
+	right: 2%;
+	width:50px;
+	}
+
+	.btn1{
+		display:block;
+		width:20%;
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.5em;
+		font-weight: bold;
+		padding:3%;
+		border-radius: 10px;
+		background:rgb(89, 230, 33);
+		color:white;
+		/* transition: duration + property + delay + timing */
+		transition:0.5s all 0s ease-in-out;
+		}
+		.btn1:hover{
+			box-shadow:0 0 5px 5px rgba(255, 255, 255, 0.3);
+			}
+		.btn1:active{
+			transform:scale(0.8);
+		}
+		.btnGoogle{
+			background:rgb(27, 27, 195);
+		}
+	.volver img{
+		width:100%;
+	}
+
+	.caja{
+		background:rgba(255, 255, 255, 0.623);
+		padding:3%;
+		display:flex;
+		justify-content: center;
+		}
+		.links{
+			width:30%;
+		}	
+		.textos{
+			width: 40%;
+		}
+		.textos div:target{
+			background:gold;
+		}
+
+
+/*Animaciones*/
+/*
+1) Definir la animacion en progreso de keyframes
+2) Aplicar esa animacion, mediante animation-name y animation-duration
+*/
+
+@keyframes anim1{
+	/* progreso -> from > to / 0% > 100% */
+	0%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.2;
+	}
+	100%{
+		opacity:1;
+	}
+}
+@keyframes anim2{
+	0%{
+		transform:translateY(-100px);
+		opacity:0;
+	}
+	100%{
+		transform:translateY(0);
+		opacity:1;
+	}
+}
+@keyframes ingresoLeft{
+	0%{
+		transform:translateX(-2000px);
+		opacity:0;
+	}
+	100%{
+		transform:translateX(0);
+		opacity:1;
+	}
+}
+@keyframes opacidad{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+/* body{
+	animation:opacidad 1s 0s;
+	animation-delay: 0s;
+}
+#seccion1,#seccion2,#seccion3,#seccion4,#seccion5,#seccion6{
+	animation-name:ingresoLeft;
+	animation-duration:2s;
+	animation-delay: 1s;
+}
+#header{
+	animation-name:anim2;
+	animation-duration:1.5s;
+	animation-delay:3s;
+} */
+@keyframes logo1{
+	0%{
+		transform:translateX(0) rotate(0);
+	}
+	100%{
+		transform:translateX(50vw) rotate(360deg);
+	}
+}
+.logo{
+	width:30%;
+	animation-name:logo1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate ;
+	animation-play-state: running;
+	}
+	.logo:hover{
+		animation-play-state: paused;
+		cursor:not-allowed;
+	}
+.logo img{
+	width:100%;
+}
