@@ -1,4 +1,3 @@
-*{margin: 0;padding:0;}
 
 .bg1{background: #16a085 }
 .bg2{background: #27ae60}
@@ -12,6 +11,11 @@
 .bg10{background: #f39c12}
 .bg11{background:white}
 
-.sinPadding{
-    padding:0;
+.caja{
+    background: brown;
+}
+@media (min-width:768px){
+    .caja{
+        background: rgb(25, 95, 224)
+    }
 }
