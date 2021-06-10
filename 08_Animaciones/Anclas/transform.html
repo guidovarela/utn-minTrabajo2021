@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform   </title>
+    <style>
+        body{margin: 0;}
+        .caja{
+            width: 30%;
+            height: 200px;
+            color: white;
+            padding: 3%;
+            margin:0 auto;
+            margin-top: 20px;
+            
+            }
+            .caja1{
+                background-color: crimson;
+            }
+            .caja1:hover{
+                /* width: 50%; */
+                /* transform ->
+                    -> scale(1,1) 
+                    -> rotate(360deg) / (1turn)
+                    -> translate(px,%,em...)
+                    -> skew(deg,deg)
+                 */
+                transform: scaleX(1.5) scaleY(1.5);
+                transform: scale(1,1.5);
+                /* transform: translate(0px,100px); */
+            }
+            .caja2{
+                background-color: darkblue;
+                transition-duration: 2s;
+                transform-origin: center;
+                }
+                .caja2:hover{
+                    transform: skew(90deg);
+                }
+    </style>
+</head>
+<body>
+    
+    <div class="caja caja1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto, fuga id nam adipisci, quia dolorum tempora similique fugiat suscipit facilis beatae dolorem voluptatem maxime, ipsam sunt velit neque dolor?
+    </div>
+   <div class="caja caja2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto, fuga id nam adipisci, quia dolorum tempora similique fugiat suscipit facilis beatae dolorem voluptatem maxime, ipsam sunt velit neque dolor?
+    </div>
+
+</body>
+</html>

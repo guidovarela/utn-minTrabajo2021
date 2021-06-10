@@ -1,0 +1,113 @@
+html{
+    scroll-behavior: smooth;
+    font-family: "Montserrat";
+}
+body{
+    margin: 0;
+}
+
+#header{
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.739);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+    }
+    #header a{
+        color: brown;
+        text-decoration: none;
+    }
+
+    /* contenedor */
+    section{
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    /*estado en reposo */
+    #seccion1{
+        background-color: rgb(117, 194, 40);
+        transition-duration: 1s;
+        transition-property: all;
+        transition-delay: 0s;
+        transition-timing-function: ease ;
+    }
+    /* estado activo */
+    #seccion1:hover{
+            background-color: chartreuse;
+            border-radius: 35px ;
+        }
+
+    #seccion2{
+        background-color: coral;
+        transition-duration: 2s;
+        }
+        #seccion2:hover{
+            transform: skewX(-10deg);
+        }
+
+        h2{
+            text-align: left;
+            transition-duration: 1s;
+        }
+        h2:hover{
+            text-align:center;
+            
+        }
+
+        /* transform -> scale / rotate / translate / skew */
+
+
+
+    #seccion7{
+        background-color: burlywood;
+    }
+
+
+    /* ANIMATION CSS  */
+
+/* 1) definir la animacion -> progreso */
+@keyframes anim1{
+    0%{ opacity: 0; color:white; }
+    100%{ opacity: 1; }
+}
+@keyframes animHeader1{
+    0%{ transform: translateY(-100px); }
+    100%{ transform: translateY(0); }
+}
+@keyframes animSeccion1{
+    0%{transform: translateX(-1000px); }
+    100%{transform: translateX(0);}
+}
+@keyframes animSeccion2{
+    0%{ transform: scale(1);    }
+    50%{ transform: scale(1.05);   }
+    100%{ transform: scale(1)    }
+}
+/* 2) aplicarla al elemento, y darle el tiempo */
+@media (min-width:990px){
+#header{
+    animation-name: animHeader1;
+    animation-duration: 2s;
+}
+body{
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+#seccion1{
+    animation-name: animSeccion1;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+#seccion2{
+    animation-name: animSeccion1,animSeccion2;
+    animation-duration: 2s,2s;
+    animation-delay: 4s,6s;
+    animation-fill-mode: both,forwards;
+    animation-iteration-count:1,infinite ;
+}
+
+
+}

@@ -20,11 +20,21 @@ p{
     margin-bottom:10px;
 }
 
+@keyframes anim1{
+    0%{ opacity: 0; color:white; }
+    100%{ opacity: 1; }
+}
+@keyframes animHeader1{
+    0%{ transform: translateY(-100px); }
+    100%{ transform: translateY(0); }
+}
 
 /* Selector de Clase */
 .destacado{
     font-size:20px;
     border:none;
+    animation-name: animHeader1;
+    animation-duration: 2s;
 }
 .imagenHeader{
     width:100%;
