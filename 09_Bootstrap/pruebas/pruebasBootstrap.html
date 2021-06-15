@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+
+    <h1 class="text-center text-danger fs-3">Usando Bootstrap</h1>
+    <hr>
+
+    <header class="container-fluid bg1">
+        <span>Esto es un container-fluid</span>
+    </header>
+    
+    <header class="bg1">
+        <span>Esto es un container-fluid, sin la clase container-fluid</span>
+    </header>
+
+    <section class="container bg2">
+        <span>Esto es un container</span>
+    </section>
+
+    <div class="container-fluid bg3">
+        <div class="container">
+            <span>Contenedores Anidados</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ad ipsa reiciendis voluptas quod aut velit, eum cum laboriosam neque facere adipisci expedita fuga veniam? Beatae aspernatur esse non voluptatum!
+    </p>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt repellendus est mollitia eligendi totam eos, eum id sequi porro deleniti neque nulla alias pariatur nam. Nihil error qui eligendi rerum?</p>
+    </div>
+    
+    <hr>
+
+    <h2>Sistema de Grillas (.row + .col)</h2>
+    
+    <section class="container-fluid bg7">
+        <div class="container">
+            <div class="row">
+                <div class="col bg-primary">Columna 1</div>
+                <div class="col bg-primary">Columna 2</div>
+                <div class="col bg-primary">Columna 3</div>
+                <div class="col bg-primary">Columna 4</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container-fluid bg7">
+        <div class="container">
+            <div class="row">
+                <!-- la grilla de Bootstra es de 12 espacios -->
+                <div class="col-6">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, adipisci! Ducimus, quidem. Quas ducimus at assumenda architecto dolorem sed vel quod fugiat illo quo, saepe fugit debitis porro perferendis aut.</p></div>
+                <div class="col-6">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, adipisci! Ducimus, quidem. Quas ducimus at assumenda architecto dolorem sed vel quod fugiat illo quo, saepe fugit debitis porro perferendis aut.</p>
+                </div>
+                <div class="col-12">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, adipisci! Ducimus, quidem. Quas ducimus at assumenda architecto dolorem sed vel quod fugiat illo quo, saepe fugit debitis porro perferendis aut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row ">
+                <div class="col-5">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum ipsam nostrum sequi, ut nesciunt, officiis laboriosam autem quod modi culpa sit, rerum perferendis delectus ad ipsa suscipit exercitationem? Libero, molestiae?</p>
+                </div>
+                <!-- <div class="col-2"></div> -->
+                <div class="col-5">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum ipsam nostrum sequi, ut nesciunt, officiis laboriosam autem quod modi culpa sit, rerum perferendis delectus ad ipsa suscipit exercitationem? Libero, molestiae?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <h2>Columnas Responsive</h2>
+    <section class="container-fluid bg10">
+        <div class="container">
+            <div class="row">
+               <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 bg-white">
+                   <h3>Titulo</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis impedit earum natus alias quo consectetur corporis, maiores hic labore debitis illum sint fuga doloribus ut aut repudiandae, quis voluptatum.</p>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis impedit earum natus alias quo consectetur corporis, maiores hic labore debitis illum sint fuga doloribus ut aut repudiandae, quis voluptatum.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 bg-white">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis impedit earum natus alias quo consectetur corporis, maiores hic labore debitis illum sint fuga doloribus ut aut repudiandae, quis voluptatum.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis impedit earum natus alias quo consectetur corporis, maiores hic labore debitis illum sint fuga doloribus ut aut repudiandae, quis voluptatum.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
