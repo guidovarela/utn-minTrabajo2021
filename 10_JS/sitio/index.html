@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+    <header class="container-fluid header p-3">
+        <div class="container">
+
+                <nav class="navbar navbar-expand-lg navbar-dark">
+
+                    <!-- <div class="container"> -->
+                      <a class="navbar-brand" href="#">
+                        <h1 class="text-uppercase text-white m-0">
+                            utn
+                        </h1>
+                      </a>
+
+                      <!-- Boton Hamburguer -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Servicios</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#">Productos</a>
+                          </li>
+                          <li class="nav-item">
+                            <!-- <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                            <a class="nav-link active" href="#contacto">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            
+        </div>
+    </header>
+    <div class="separador p-2"></div>
+
+    <div class="slider container-fluid my-3">
+        <!-- aca metemos el Carousel -->
+    </div>
+
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="noticia">
+                        <figure>
+                            <img class="img-fluid" src="img/nota1.jpg" alt="">
+                        </figure>
+                        <div class="contenido">
+                            <h3>Titulo</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam enim eius dolores perspiciatis modi repellendus numquam, libero</p>
+                            <a href="" class="btn btn-primary">Leer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="noticia">
+                        <figure>
+                            <img class="img-fluid" src="img/nota2.jpg" alt="">
+                        </figure>
+                        <div class="contenido">
+                            <h3>Titulo</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam enim eius dolores perspiciatis modi repellendus numquam, libero</p>
+                            <a href="" class="btn btn-primary">Leer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="noticia">
+                        <figure>
+                            <img class="img-fluid" src="img/nota3.jpg" alt="">
+                        </figure>
+                        <div class="contenido">
+                            <h3>Titulo</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam enim eius dolores perspiciatis modi repellendus numquam, libero</p>
+                            <a href="" class="btn btn-primary">Leer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="noticia">
+                        <figure>
+                            <img class="img-fluid" src="img/nota4.jpg" alt="">
+                        </figure>
+                        <div class="contenido">
+                            <h3>Titulo</h3>
+                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ullam enim eius dolores perspiciatis modi repellendus numquam, libero</p>
+                            <a href="" class="btn btn-primary">Leer</a>
+                        </div>
+                    </div>
+                </div> <!-- .col -->
+            </div> <!-- .row -->
+
+            <aside class="banner p-5 bg-secondary my-5"></aside>
+
+        </div> 
+    </section> 
+
+
+    <section class="container-fluid contacto my-5" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <hr>
+
+            <form action="" method="post" class="w-75">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre </label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  name="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea name="mensaje" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <footer class="container-fluid bg-dark text-white p-3 text-center">
+        <div class="container">
+            <p class="fw-lighter mb-0">&copy; 2021 - Derechos Reservador</p>
+            <p class="fw-lighter mt-0">Desarrollado por <a href="">Yo</a></p>
+        </div>
+    </footer>
+
+
+    
+    <!-- Bootstrap JavaScript -> Components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

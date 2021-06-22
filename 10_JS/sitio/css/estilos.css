@@ -1,0 +1,14 @@
+
+body{
+    font-family: "Montserrat";
+}
+.header{
+    background:linear-gradient(#21caab,#16a086);
+}
+.separador{
+    background-color: #107a70 ;
+}
+.slider{
+    background: linear-gradient(rgb(12, 12, 92), rgb(153, 102, 153));
+    height: 300px;
+}
