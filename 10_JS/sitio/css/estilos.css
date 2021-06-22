@@ -9,6 +9,7 @@ body{
     background-color: #107a70 ;
 }
 .slider{
-    background: linear-gradient(rgb(12, 12, 92), rgb(153, 102, 153));
-    height: 300px;
+    /*background: linear-gradient(rgb(12, 12, 92), rgb(153, 102, 153));
+    height: 300px;*/
+    max-width: 1600px;
 }
